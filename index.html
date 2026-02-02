@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Special Order #001</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card-container">
+        <div id="ticket-1" class="ticket">
+            <div class="ticket-header">
+                <h2>ORDER #001</h2>
+                <p class="status">NEW CHAPTER: LEVEL 1 COMPLETE</p>
+            </div>
+            <hr class="dashed">
+            <div id="content-area">
+                <div id="start-screen">
+                    <p class="section-title">INGREDIENTS:</p>
+                    <ul class="ingredient-list">
+                        <li>1x Cutie (You) </li>
+                        <li>1x Another cutie (Me) </li>
+                        <li>1x Sausage Dog (Extra Long)</li>
+                         <li>1x Kitty Cat </li>
+                        <li>Lots of "Overcooked" Chaos</li>
+                    </ul>
+                    <button id="cook-btn" class="btn">START COOKING, CHEF!</button>
+                </div>
+
+                <div id="terminal" class="hidden"></div>
+
+                <div id="final-screen" class="hidden">
+                    <h2 class="pink-text">3 STARS ACHIEVED! ⭐⭐⭐</h2>
+                    <p>You’re the best teammate I could've asked for. Great job, chef. </p>
+                    <div class="sausage-dog">🌭🐕</div>
+                    <button id="next-btn" class="btn">VIEW NEXT ORDER?</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="ticket-2" class="ticket hidden">
+            <div class="ticket-header">
+                <h2>ORDER #002</h2>
+                <p class="status">URGENT: HUNGRY CHEFS</p>
+            </div>
+            <hr class="dashed">
+            <div class="date-invite">
+                <p class="section-title">RECIPE: "THE DATE NIGHT"</p>
+                <ul class="ingredient-list">
+                    <li>A table for two</li>
+                    <li>No kitchen fires</li>
+                    <li>Guaranteed 3 stars</li>
+                </ul>
+                <p>Will you go on a dinner date with me?</p>
+                <div class="choice-btns">
+                    <button class="btn" onclick="alert('Order accepted! See you there, Chef. 😉')">YES, CHEF!</button>
+                </div>
+            </div>
+            <p class="footer-code">// status: pending_dinner.exe</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
